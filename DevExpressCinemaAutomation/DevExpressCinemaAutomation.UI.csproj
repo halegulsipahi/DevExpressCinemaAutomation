@@ -44,6 +44,9 @@
     <Reference Include="DevExpress.XtraEditors.v26.1" />
     <Reference Include="DevExpress.Printing.v26.1.Core" />
     <Reference Include="DevExpress.Drawing.v26.1" />
+    <Reference Include="DevExpress.XtraGrid.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -63,6 +66,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmMovieList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMovieList.Designer.cs">
+      <DependentUpon>FrmMovieList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMovieAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMovieAdd.Designer.cs">
+      <DependentUpon>FrmMovieAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMovieUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMovieUpdate.Designer.cs">
+      <DependentUpon>FrmMovieUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +92,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmMovieList.resx">
+      <DependentUpon>FrmMovieList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMovieAdd.resx">
+      <DependentUpon>FrmMovieAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMovieUpdate.resx">
+      <DependentUpon>FrmMovieUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +132,10 @@
     <ProjectReference Include="..\CinemaAutomation.DataAccess\CinemaAutomation.DataAccess.csproj">
       <Project>{a905e725-f149-42fc-8f7b-8ba2104e3e8f}</Project>
       <Name>CinemaAutomation.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CinemaAutomation.Entities\CinemaAutomation.Entities.csproj">
+      <Project>{98F81035-3DC5-4EF7-9CE4-370E020A6A18}</Project>
+      <Name>CinemaAutomation.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
