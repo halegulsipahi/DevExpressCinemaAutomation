@@ -9,13 +9,17 @@ using System.Windows.Forms;
 
 namespace DevExpressCinemaAutomation
 {
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    public partial class FrmMain : DevExpress.XtraEditors.XtraForm
     {
-        public Form1()
+        public FrmMain()
         {
             InitializeComponent();
 
         }
 
+        private void RE_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }
