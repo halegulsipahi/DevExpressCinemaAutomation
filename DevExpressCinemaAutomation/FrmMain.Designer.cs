@@ -36,7 +36,7 @@
             this.btnAddMovie = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.btnEditMovie = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRemoveMovie = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
@@ -75,7 +75,7 @@
             this.btnAddMovie,
             this.barButtonItem3,
             this.btnEditMovie,
-            this.barButtonItem5,
+            this.btnRemoveMovie,
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
@@ -132,24 +132,25 @@
             // 
             this.btnEditMovie.Caption = "EDIT ";
             this.btnEditMovie.Id = 4;
-            this.btnEditMovie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.btnEditMovie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.btnEditMovie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditMovie.ImageOptions.Image")));
+            this.btnEditMovie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEditMovie.ImageOptions.LargeImage")));
             this.btnEditMovie.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEditMovie.ItemAppearance.Normal.Options.UseFont = true;
             this.btnEditMovie.LargeWidth = 80;
             this.btnEditMovie.Name = "btnEditMovie";
             this.btnEditMovie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEditMovie_ItemClick);
             // 
-            // barButtonItem5
+            // btnRemoveMovie
             // 
-            this.barButtonItem5.Caption = "REMOVE\r\n";
-            this.barButtonItem5.Id = 5;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.barButtonItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem5.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem5.LargeWidth = 80;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.btnRemoveMovie.Caption = "REMOVE\r\n";
+            this.btnRemoveMovie.Id = 5;
+            this.btnRemoveMovie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.btnRemoveMovie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.btnRemoveMovie.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRemoveMovie.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnRemoveMovie.LargeWidth = 80;
+            this.btnRemoveMovie.Name = "btnRemoveMovie";
+            this.btnRemoveMovie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRemoveMovie_ItemClick);
             // 
             // barButtonItem6
             // 
@@ -275,7 +276,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnListMovie);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnAddMovie);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnEditMovie);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnRemoveMovie);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Movie Operations";
             // 
@@ -363,7 +364,7 @@
         private DevExpress.XtraBars.BarButtonItem btnAddMovie;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem btnEditMovie;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem btnRemoveMovie;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;

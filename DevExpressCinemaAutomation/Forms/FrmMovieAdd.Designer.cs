@@ -29,190 +29,210 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMovieAdd));
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTitle = new DevExpress.XtraEditors.TextEdit();
-            this.txtGenre = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtDirector = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtDuration = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtReleaseDate = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGenre.Properties)).BeginInit();
+            this.txtDirector = new DevExpress.XtraEditors.TextEdit();
+            this.txtGenre = new DevExpress.XtraEditors.TextEdit();
+            this.txtTitle = new DevExpress.XtraEditors.TextEdit();
+            this.numericDuration = new System.Windows.Forms.NumericUpDown();
+            this.dateReleaseDate = new DevExpress.XtraEditors.DateEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDirector.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDuration.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtReleaseDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGenre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDuration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl1
+            // groupControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseTextOptions = true;
-            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl1.Location = new System.Drawing.Point(16, 13);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(159, 23);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Title:";
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(190, 12);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTitle.Properties.Appearance.Options.UseFont = true;
-            this.txtTitle.Size = new System.Drawing.Size(257, 26);
-            this.txtTitle.TabIndex = 1;
-            // 
-            // txtGenre
-            // 
-            this.txtGenre.Location = new System.Drawing.Point(190, 60);
-            this.txtGenre.Name = "txtGenre";
-            this.txtGenre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtGenre.Properties.Appearance.Options.UseFont = true;
-            this.txtGenre.Size = new System.Drawing.Size(257, 26);
-            this.txtGenre.TabIndex = 3;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseTextOptions = true;
-            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl2.Location = new System.Drawing.Point(16, 61);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(159, 23);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "Genre:";
-            // 
-            // txtDirector
-            // 
-            this.txtDirector.Location = new System.Drawing.Point(190, 108);
-            this.txtDirector.Name = "txtDirector";
-            this.txtDirector.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDirector.Properties.Appearance.Options.UseFont = true;
-            this.txtDirector.Size = new System.Drawing.Size(257, 26);
-            this.txtDirector.TabIndex = 5;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseTextOptions = true;
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl3.Location = new System.Drawing.Point(16, 157);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(159, 23);
-            this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Duration(min):";
-            // 
-            // txtDuration
-            // 
-            this.txtDuration.Location = new System.Drawing.Point(190, 156);
-            this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDuration.Properties.Appearance.Options.UseFont = true;
-            this.txtDuration.Size = new System.Drawing.Size(257, 26);
-            this.txtDuration.TabIndex = 7;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseTextOptions = true;
-            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl4.Location = new System.Drawing.Point(16, 205);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(159, 23);
-            this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Release Date:";
-            // 
-            // txtReleaseDate
-            // 
-            this.txtReleaseDate.Location = new System.Drawing.Point(190, 204);
-            this.txtReleaseDate.Name = "txtReleaseDate";
-            this.txtReleaseDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtReleaseDate.Properties.Appearance.Options.UseFont = true;
-            this.txtReleaseDate.Size = new System.Drawing.Size(257, 26);
-            this.txtReleaseDate.TabIndex = 9;
+            this.groupControl1.Controls.Add(this.dateReleaseDate);
+            this.groupControl1.Controls.Add(this.numericDuration);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.btnSave);
+            this.groupControl1.Controls.Add(this.txtDirector);
+            this.groupControl1.Controls.Add(this.txtGenre);
+            this.groupControl1.Controls.Add(this.txtTitle);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(531, 318);
+            this.groupControl1.TabIndex = 11;
+            this.groupControl1.Text = "Movie Information";
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseTextOptions = true;
             this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl5.Location = new System.Drawing.Point(16, 109);
+            this.labelControl5.Location = new System.Drawing.Point(0, 102);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(159, 23);
-            this.labelControl5.TabIndex = 8;
+            this.labelControl5.Size = new System.Drawing.Size(129, 23);
+            this.labelControl5.TabIndex = 35;
             this.labelControl5.Text = "Director:";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseTextOptions = true;
+            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.labelControl4.Location = new System.Drawing.Point(0, 176);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(129, 23);
+            this.labelControl4.TabIndex = 34;
+            this.labelControl4.Text = "Release Date:";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseTextOptions = true;
+            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.labelControl3.Location = new System.Drawing.Point(0, 139);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(129, 23);
+            this.labelControl3.TabIndex = 33;
+            this.labelControl3.Text = "Duration(min):";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseTextOptions = true;
+            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.labelControl2.Location = new System.Drawing.Point(0, 65);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(129, 23);
+            this.labelControl2.TabIndex = 32;
+            this.labelControl2.Text = "Genre:";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseTextOptions = true;
+            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.labelControl1.Location = new System.Drawing.Point(0, 28);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(129, 23);
+            this.labelControl1.TabIndex = 31;
+            this.labelControl1.Text = "Title:";
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.btnSave.Location = new System.Drawing.Point(230, 247);
+            this.btnSave.Location = new System.Drawing.Point(244, 206);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(159, 33);
-            this.btnSave.TabIndex = 10;
+            this.btnSave.Size = new System.Drawing.Size(90, 26);
+            this.btnSave.TabIndex = 21;
             this.btnSave.Text = "SAVE\r\n";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtDirector
+            // 
+            this.txtDirector.Location = new System.Drawing.Point(135, 103);
+            this.txtDirector.Name = "txtDirector";
+            this.txtDirector.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDirector.Properties.Appearance.Options.UseFont = true;
+            this.txtDirector.Size = new System.Drawing.Size(199, 22);
+            this.txtDirector.TabIndex = 16;
+            // 
+            // txtGenre
+            // 
+            this.txtGenre.Location = new System.Drawing.Point(135, 66);
+            this.txtGenre.Name = "txtGenre";
+            this.txtGenre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtGenre.Properties.Appearance.Options.UseFont = true;
+            this.txtGenre.Size = new System.Drawing.Size(199, 22);
+            this.txtGenre.TabIndex = 14;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(135, 29);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTitle.Properties.Appearance.Options.UseFont = true;
+            this.txtTitle.Size = new System.Drawing.Size(199, 22);
+            this.txtTitle.TabIndex = 12;
+            // 
+            // numericDuration
+            // 
+            this.numericDuration.Location = new System.Drawing.Point(135, 141);
+            this.numericDuration.Name = "numericDuration";
+            this.numericDuration.Size = new System.Drawing.Size(199, 21);
+            this.numericDuration.TabIndex = 36;
+            // 
+            // dateReleaseDate
+            // 
+            this.dateReleaseDate.EditValue = null;
+            this.dateReleaseDate.Location = new System.Drawing.Point(135, 179);
+            this.dateReleaseDate.Name = "dateReleaseDate";
+            this.dateReleaseDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateReleaseDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateReleaseDate.Size = new System.Drawing.Size(199, 20);
+            this.dateReleaseDate.TabIndex = 37;
             // 
             // FrmMovieAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 424);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtReleaseDate);
-            this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.txtDuration);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.txtDirector);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.txtGenre);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.txtTitle);
-            this.Controls.Add(this.labelControl1);
+            this.ClientSize = new System.Drawing.Size(531, 318);
+            this.Controls.Add(this.groupControl1);
             this.Name = "FrmMovieAdd";
             this.Text = "Add New Film";
-            ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGenre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtDirector.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDuration.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtReleaseDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGenre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDuration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit txtTitle;
-        private DevExpress.XtraEditors.TextEdit txtGenre;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtDirector;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtDuration;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit txtReleaseDate;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.TextEdit txtDirector;
+        private DevExpress.XtraEditors.TextEdit txtGenre;
+        private DevExpress.XtraEditors.TextEdit txtTitle;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.NumericUpDown numericDuration;
+        private DevExpress.XtraEditors.DateEdit dateReleaseDate;
     }
 }

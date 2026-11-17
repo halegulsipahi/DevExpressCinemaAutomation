@@ -70,5 +70,12 @@ namespace DevExpressCinemaAutomation
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void btnRemoveMovie_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmMovieDelete frm = new FrmMovieDelete();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -66,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmMovieDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMovieDelete.Designer.cs">
+      <DependentUpon>FrmMovieDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmMovieList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmMovieDelete.resx">
+      <DependentUpon>FrmMovieDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMovieList.resx">
       <DependentUpon>FrmMovieList.cs</DependentUpon>
     </EmbeddedResource>
