@@ -114,6 +114,12 @@
     <Compile Include="Forms\MovieForms\FrmMovieUpdate.Designer.cs">
       <DependentUpon>FrmMovieUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ReservationForms\FrmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReservationForms\FrmReservation.Designer.cs">
+      <DependentUpon>FrmReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ReservationForms\FrmSeats.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MovieForms\FrmMovieUpdate.resx">
       <DependentUpon>FrmMovieUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReservationForms\FrmReservation.resx">
+      <DependentUpon>FrmReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReservationForms\FrmSeats.resx">
       <DependentUpon>FrmSeats.cs</DependentUpon>

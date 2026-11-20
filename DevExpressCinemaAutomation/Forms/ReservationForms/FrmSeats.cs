@@ -33,7 +33,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
                 {
                     // Create and configure seat buttons
                     Button btnSeat = new Button();
-                    btnSeat.Text = $" Seat: {seat.SeatNumber}";
+                    btnSeat.Text = $" NO: {seat.SeatNumber}";
                     btnSeat.Width = 60;
                     btnSeat.Height = 60;
                     btnSeat.Tag = seat.Id; // Store the seat object in the button's Tag property

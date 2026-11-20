@@ -242,8 +242,8 @@
             // 
             this.btnShowSeat.Caption = "SHOW SEATS\r\n";
             this.btnShowSeat.Id = 14;
-            this.btnShowSeat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.btnShowSeat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
+            this.btnShowSeat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnShowSeat.ImageOptions.Image")));
+            this.btnShowSeat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnShowSeat.ImageOptions.LargeImage")));
             this.btnShowSeat.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnShowSeat.ItemAppearance.Normal.Options.UseFont = true;
             this.btnShowSeat.LargeWidth = 140;
@@ -260,12 +260,13 @@
             // 
             this.btnMakeReservation.Caption = "MAKE RESERVATION";
             this.btnMakeReservation.Id = 16;
-            this.btnMakeReservation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("MAK.ImageOptions.Image")));
-            this.btnMakeReservation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("MAK.ImageOptions.LargeImage")));
+            this.btnMakeReservation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMakeReservation.ImageOptions.Image")));
+            this.btnMakeReservation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMakeReservation.ImageOptions.LargeImage")));
             this.btnMakeReservation.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMakeReservation.ItemAppearance.Normal.Options.UseFont = true;
             this.btnMakeReservation.LargeWidth = 170;
             this.btnMakeReservation.Name = "btnMakeReservation";
+            this.btnMakeReservation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMakeReservation_ItemClick);
             // 
             // ribbonPage1
             // 

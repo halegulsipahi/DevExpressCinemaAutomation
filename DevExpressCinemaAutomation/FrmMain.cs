@@ -113,5 +113,12 @@ namespace DevExpressCinemaAutomation
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void btnMakeReservation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmReservation frm = new FrmReservation();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -624,7 +624,7 @@
         TgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barButtonItem13.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnShowSeat.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABN0RVh0VGl0
         bGUAUHJldmlldztQcmludJiRofMAAALbSURBVDhPZdJvTBN3HMfxb+YDIizO7ak+MJK4xGR7otmyLJqo
@@ -642,7 +642,7 @@
         RKQgZ5jJs3mplCzOl6KFeVK0IE8sC/MySIGIvCMib4rInJehFNPIIATVVwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barButtonItem13.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnShowSeat.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABN0RVh0VGl0
         bGUAUHJldmlldztQcmludJiRofMAAAhaSURBVFhHxZd7UJTXGcaPvaX3W9LLtDOZJh01Ju10OtOZTNNp
@@ -684,7 +684,7 @@
         9D9exxAJS5yeUAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="MAK.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnMakeReservation.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPdEVYdFRpdGxlAENoZWNrQm94O5sXHjsAAALHSURB
@@ -703,7 +703,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="MAK.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnMakeReservation.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPdEVYdFRpdGxlAENoZWNrQm94O5sXHjsAAAa1SURB
