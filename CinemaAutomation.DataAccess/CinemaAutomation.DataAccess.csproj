@@ -59,8 +59,10 @@
     <Compile Include="Mappings\ReservationMap.cs" />
     <Compile Include="Mappings\SeatMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CashRegisterService.cs" />
     <Compile Include="Services\CustomerService.cs" />
     <Compile Include="Services\MovieService.cs" />
+    <Compile Include="Services\SeatService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
