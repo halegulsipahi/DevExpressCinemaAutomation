@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CinemaEFContext.cs" />
+    <Compile Include="DatabaseSeeder.cs" />
     <Compile Include="Mappings\CashRegisterMap.cs" />
     <Compile Include="Mappings\CustomerMap.cs" />
     <Compile Include="Mappings\MovieMap.cs" />

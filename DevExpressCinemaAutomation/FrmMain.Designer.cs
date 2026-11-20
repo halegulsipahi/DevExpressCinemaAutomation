@@ -45,9 +45,9 @@
             this.btnDeleteCustomer = new DevExpress.XtraBars.BarButtonItem();
             this.btnEditCustomer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnShowSeat = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
-            this.MAK = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMakeReservation = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -84,9 +84,9 @@
             this.btnDeleteCustomer,
             this.btnEditCustomer,
             this.barButtonItem12,
-            this.barButtonItem13,
+            this.btnShowSeat,
             this.barButtonItem14,
-            this.MAK});
+            this.btnMakeReservation});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 17;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -238,16 +238,17 @@
             this.barButtonItem12.Id = 13;
             this.barButtonItem12.Name = "barButtonItem12";
             // 
-            // barButtonItem13
+            // btnShowSeat
             // 
-            this.barButtonItem13.Caption = "SHOW SEATS\r\n";
-            this.barButtonItem13.Id = 14;
-            this.barButtonItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.barButtonItem13.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
-            this.barButtonItem13.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem13.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem13.LargeWidth = 140;
-            this.barButtonItem13.Name = "barButtonItem13";
+            this.btnShowSeat.Caption = "SHOW SEATS\r\n";
+            this.btnShowSeat.Id = 14;
+            this.btnShowSeat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
+            this.btnShowSeat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
+            this.btnShowSeat.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnShowSeat.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnShowSeat.LargeWidth = 140;
+            this.btnShowSeat.Name = "btnShowSeat";
+            this.btnShowSeat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnShowSeat_ItemClick);
             // 
             // barButtonItem14
             // 
@@ -255,16 +256,16 @@
             this.barButtonItem14.Id = 15;
             this.barButtonItem14.Name = "barButtonItem14";
             // 
-            // MAK
+            // btnMakeReservation
             // 
-            this.MAK.Caption = "MAKE RESERVATION";
-            this.MAK.Id = 16;
-            this.MAK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("MAK.ImageOptions.Image")));
-            this.MAK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("MAK.ImageOptions.LargeImage")));
-            this.MAK.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MAK.ItemAppearance.Normal.Options.UseFont = true;
-            this.MAK.LargeWidth = 170;
-            this.MAK.Name = "MAK";
+            this.btnMakeReservation.Caption = "MAKE RESERVATION";
+            this.btnMakeReservation.Id = 16;
+            this.btnMakeReservation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("MAK.ImageOptions.Image")));
+            this.btnMakeReservation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("MAK.ImageOptions.LargeImage")));
+            this.btnMakeReservation.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMakeReservation.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMakeReservation.LargeWidth = 170;
+            this.btnMakeReservation.Name = "btnMakeReservation";
             // 
             // ribbonPage1
             // 
@@ -327,8 +328,8 @@
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup4.ItemLinks.Add(this.MAK);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnShowSeat);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnMakeReservation);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Reservation Operations";
             // 
@@ -382,9 +383,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarButtonItem btnShowSeat;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
-        private DevExpress.XtraBars.BarButtonItem MAK;
+        private DevExpress.XtraBars.BarButtonItem btnMakeReservation;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }
 }

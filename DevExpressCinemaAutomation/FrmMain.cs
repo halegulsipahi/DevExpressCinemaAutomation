@@ -3,6 +3,7 @@ using CinemaAutomation.DataAccess.Services;
 using CinemaAutomation.Entities.Models;
 using DevExpressCinemaAutomation.Forms;
 using DevExpressCinemaAutomation.Forms.CustomerForms;
+using DevExpressCinemaAutomation.Forms.ReservationForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -106,5 +107,11 @@ namespace DevExpressCinemaAutomation
             frm.Show();
         }
 
+        private void btnShowSeat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmSeats frm = new FrmSeats();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
