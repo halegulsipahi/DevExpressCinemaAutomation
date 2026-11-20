@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCustomerUpdate));
             this.grpCustomerInfo = new DevExpress.XtraEditors.GroupControl();
+            this.cmbCustomers = new System.Windows.Forms.ComboBox();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -39,8 +41,6 @@
             this.txtPhone = new DevExpress.XtraEditors.TextEdit();
             this.txtSurname = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
-            this.cmbCustomers = new System.Windows.Forms.ComboBox();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.grpCustomerInfo)).BeginInit();
             this.grpCustomerInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
@@ -68,6 +68,31 @@
             this.grpCustomerInfo.Size = new System.Drawing.Size(531, 318);
             this.grpCustomerInfo.TabIndex = 13;
             this.grpCustomerInfo.Text = "Customer Information";
+            // 
+            // cmbCustomers
+            // 
+            this.cmbCustomers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCustomers.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbCustomers.FormattingEnabled = true;
+            this.cmbCustomers.Location = new System.Drawing.Point(140, 28);
+            this.cmbCustomers.Name = "cmbCustomers";
+            this.cmbCustomers.Size = new System.Drawing.Size(199, 24);
+            this.cmbCustomers.TabIndex = 42;
+            this.cmbCustomers.SelectedIndexChanged += new System.EventHandler(this.cmbCustomers_SelectedIndexChanged);
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseTextOptions = true;
+            this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.labelControl6.Location = new System.Drawing.Point(5, 29);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(129, 23);
+            this.labelControl6.TabIndex = 41;
+            this.labelControl6.Text = "Select a Customer:";
             // 
             // txtEmail
             // 
@@ -118,7 +143,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(129, 23);
             this.labelControl2.TabIndex = 32;
-            this.labelControl2.Text = "Surname:";
+            this.labelControl2.Text = "Last Name:";
             // 
             // labelControl1
             // 
@@ -132,7 +157,7 @@
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(129, 23);
             this.labelControl1.TabIndex = 31;
-            this.labelControl1.Text = "Name:";
+            this.labelControl1.Text = "First Name:";
             // 
             // btnUpdate
             // 
@@ -145,6 +170,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(90, 26);
             this.btnUpdate.TabIndex = 21;
             this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtPhone
             // 
@@ -173,31 +199,6 @@
             this.txtName.Size = new System.Drawing.Size(199, 22);
             this.txtName.TabIndex = 12;
             // 
-            // cmbCustomers
-            // 
-            this.cmbCustomers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCustomers.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbCustomers.FormattingEnabled = true;
-            this.cmbCustomers.Location = new System.Drawing.Point(140, 28);
-            this.cmbCustomers.Name = "cmbCustomers";
-            this.cmbCustomers.Size = new System.Drawing.Size(199, 24);
-            this.cmbCustomers.TabIndex = 42;
-            this.cmbCustomers.SelectedIndexChanged += new System.EventHandler(this.cmbCustomers_SelectedIndexChanged);
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseTextOptions = true;
-            this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl6.Location = new System.Drawing.Point(5, 29);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(129, 23);
-            this.labelControl6.TabIndex = 41;
-            this.labelControl6.Text = "Select a Customer:";
-            // 
             // FrmCustomerUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +207,7 @@
             this.Controls.Add(this.grpCustomerInfo);
             this.Name = "FrmCustomerUpdate";
             this.Text = "Customer Update";
+            this.Load += new System.EventHandler(this.FrmCustomerUpdate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpCustomerInfo)).EndInit();
             this.grpCustomerInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();

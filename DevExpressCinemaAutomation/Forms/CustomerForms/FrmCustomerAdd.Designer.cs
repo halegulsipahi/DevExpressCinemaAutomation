@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCustomerAdd));
             this.grpCustomerInfo = new DevExpress.XtraEditors.GroupControl();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.txtPhone = new DevExpress.XtraEditors.TextEdit();
-            this.txtSurname = new DevExpress.XtraEditors.TextEdit();
-            this.txtName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtLastName = new DevExpress.XtraEditors.TextEdit();
+            this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.grpCustomerInfo)).BeginInit();
             this.grpCustomerInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSurname.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // grpCustomerInfo
@@ -56,14 +56,37 @@
             this.grpCustomerInfo.Controls.Add(this.labelControl1);
             this.grpCustomerInfo.Controls.Add(this.btnSave);
             this.grpCustomerInfo.Controls.Add(this.txtPhone);
-            this.grpCustomerInfo.Controls.Add(this.txtSurname);
-            this.grpCustomerInfo.Controls.Add(this.txtName);
+            this.grpCustomerInfo.Controls.Add(this.txtLastName);
+            this.grpCustomerInfo.Controls.Add(this.txtFirstName);
             this.grpCustomerInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpCustomerInfo.Location = new System.Drawing.Point(0, 0);
             this.grpCustomerInfo.Name = "grpCustomerInfo";
             this.grpCustomerInfo.Size = new System.Drawing.Size(531, 318);
             this.grpCustomerInfo.TabIndex = 12;
             this.grpCustomerInfo.Text = "Customer Information";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(135, 140);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEmail.Properties.Appearance.Options.UseFont = true;
+            this.txtEmail.Size = new System.Drawing.Size(199, 22);
+            this.txtEmail.TabIndex = 36;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseTextOptions = true;
+            this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.labelControl5.Location = new System.Drawing.Point(0, 102);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(129, 23);
+            this.labelControl5.TabIndex = 35;
+            this.labelControl5.Text = "Phone:";
             // 
             // labelControl3
             // 
@@ -91,7 +114,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(129, 23);
             this.labelControl2.TabIndex = 32;
-            this.labelControl2.Text = "Surname:";
+            this.labelControl2.Text = "Last Name:";
             // 
             // labelControl1
             // 
@@ -105,7 +128,7 @@
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(129, 23);
             this.labelControl1.TabIndex = 31;
-            this.labelControl1.Text = "Name:";
+            this.labelControl1.Text = "First Name:";
             // 
             // btnSave
             // 
@@ -118,6 +141,7 @@
             this.btnSave.Size = new System.Drawing.Size(90, 26);
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "SAVE\r\n";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // txtPhone
             // 
@@ -128,46 +152,23 @@
             this.txtPhone.Size = new System.Drawing.Size(199, 22);
             this.txtPhone.TabIndex = 16;
             // 
-            // txtSurname
+            // txtLastName
             // 
-            this.txtSurname.Location = new System.Drawing.Point(135, 66);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSurname.Properties.Appearance.Options.UseFont = true;
-            this.txtSurname.Size = new System.Drawing.Size(199, 22);
-            this.txtSurname.TabIndex = 14;
+            this.txtLastName.Location = new System.Drawing.Point(135, 66);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtLastName.Properties.Appearance.Options.UseFont = true;
+            this.txtLastName.Size = new System.Drawing.Size(199, 22);
+            this.txtLastName.TabIndex = 14;
             // 
-            // txtName
+            // txtFirstName
             // 
-            this.txtName.Location = new System.Drawing.Point(135, 29);
-            this.txtName.Name = "txtName";
-            this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtName.Properties.Appearance.Options.UseFont = true;
-            this.txtName.Size = new System.Drawing.Size(199, 22);
-            this.txtName.TabIndex = 12;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseTextOptions = true;
-            this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl5.Location = new System.Drawing.Point(0, 102);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(129, 23);
-            this.labelControl5.TabIndex = 35;
-            this.labelControl5.Text = "Phone:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(135, 140);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEmail.Properties.Appearance.Options.UseFont = true;
-            this.txtEmail.Size = new System.Drawing.Size(199, 22);
-            this.txtEmail.TabIndex = 36;
+            this.txtFirstName.Location = new System.Drawing.Point(135, 29);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtFirstName.Properties.Appearance.Options.UseFont = true;
+            this.txtFirstName.Size = new System.Drawing.Size(199, 22);
+            this.txtFirstName.TabIndex = 12;
             // 
             // FrmCustomerAdd
             // 
@@ -177,12 +178,13 @@
             this.Controls.Add(this.grpCustomerInfo);
             this.Name = "FrmCustomerAdd";
             this.Text = "Add New Customer ";
+            this.Load += new System.EventHandler(this.FrmCustomerAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpCustomerInfo)).EndInit();
             this.grpCustomerInfo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSurname.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,8 +197,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.TextEdit txtPhone;
-        private DevExpress.XtraEditors.TextEdit txtSurname;
-        private DevExpress.XtraEditors.TextEdit txtName;
+        private DevExpress.XtraEditors.TextEdit txtLastName;
+        private DevExpress.XtraEditors.TextEdit txtFirstName;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit txtEmail;
     }

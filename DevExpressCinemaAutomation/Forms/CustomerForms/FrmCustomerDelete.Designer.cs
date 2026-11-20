@@ -34,12 +34,15 @@
             // 
             // dgvCustomers
             // 
+            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCustomers.Location = new System.Drawing.Point(0, 0);
             this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.ReadOnly = true;
             this.dgvCustomers.Size = new System.Drawing.Size(531, 318);
             this.dgvCustomers.TabIndex = 0;
+            this.dgvCustomers.DoubleClick += new System.EventHandler(this.dgvCustomers_DoubleClick);
             // 
             // FrmCustomerDelete
             // 
@@ -49,6 +52,7 @@
             this.Controls.Add(this.dgvCustomers);
             this.Name = "FrmCustomerDelete";
             this.Text = "Delete the Customer";
+            this.Load += new System.EventHandler(this.FrmCustomerDelete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.ResumeLayout(false);
 
