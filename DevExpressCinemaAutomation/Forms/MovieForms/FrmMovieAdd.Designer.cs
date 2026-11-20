@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMovieAdd));
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.grpMovieInfo = new DevExpress.XtraEditors.GroupControl();
+            this.dateReleaseDate = new DevExpress.XtraEditors.DateEdit();
+            this.numericDuration = new System.Windows.Forms.NumericUpDown();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -39,37 +41,59 @@
             this.txtDirector = new DevExpress.XtraEditors.TextEdit();
             this.txtGenre = new DevExpress.XtraEditors.TextEdit();
             this.txtTitle = new DevExpress.XtraEditors.TextEdit();
-            this.numericDuration = new System.Windows.Forms.NumericUpDown();
-            this.dateReleaseDate = new DevExpress.XtraEditors.DateEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grpMovieInfo)).BeginInit();
+            this.grpMovieInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDirector.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGenre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericDuration)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupControl1
+            // grpMovieInfo
             // 
-            this.groupControl1.Controls.Add(this.dateReleaseDate);
-            this.groupControl1.Controls.Add(this.numericDuration);
-            this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Controls.Add(this.btnSave);
-            this.groupControl1.Controls.Add(this.txtDirector);
-            this.groupControl1.Controls.Add(this.txtGenre);
-            this.groupControl1.Controls.Add(this.txtTitle);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(531, 318);
-            this.groupControl1.TabIndex = 11;
-            this.groupControl1.Text = "Movie Information";
+            this.grpMovieInfo.Controls.Add(this.dateReleaseDate);
+            this.grpMovieInfo.Controls.Add(this.numericDuration);
+            this.grpMovieInfo.Controls.Add(this.labelControl5);
+            this.grpMovieInfo.Controls.Add(this.labelControl4);
+            this.grpMovieInfo.Controls.Add(this.labelControl3);
+            this.grpMovieInfo.Controls.Add(this.labelControl2);
+            this.grpMovieInfo.Controls.Add(this.labelControl1);
+            this.grpMovieInfo.Controls.Add(this.btnSave);
+            this.grpMovieInfo.Controls.Add(this.txtDirector);
+            this.grpMovieInfo.Controls.Add(this.txtGenre);
+            this.grpMovieInfo.Controls.Add(this.txtTitle);
+            this.grpMovieInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpMovieInfo.Location = new System.Drawing.Point(0, 0);
+            this.grpMovieInfo.Name = "grpMovieInfo";
+            this.grpMovieInfo.Size = new System.Drawing.Size(531, 318);
+            this.grpMovieInfo.TabIndex = 11;
+            this.grpMovieInfo.Text = "Movie Information";
+            // 
+            // dateReleaseDate
+            // 
+            this.dateReleaseDate.EditValue = null;
+            this.dateReleaseDate.Location = new System.Drawing.Point(135, 179);
+            this.dateReleaseDate.Name = "dateReleaseDate";
+            this.dateReleaseDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateReleaseDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateReleaseDate.Size = new System.Drawing.Size(199, 20);
+            this.dateReleaseDate.TabIndex = 37;
+            // 
+            // numericDuration
+            // 
+            this.numericDuration.Location = new System.Drawing.Point(135, 141);
+            this.numericDuration.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericDuration.Name = "numericDuration";
+            this.numericDuration.Size = new System.Drawing.Size(199, 21);
+            this.numericDuration.TabIndex = 36;
             // 
             // labelControl5
             // 
@@ -181,48 +205,29 @@
             this.txtTitle.Size = new System.Drawing.Size(199, 22);
             this.txtTitle.TabIndex = 12;
             // 
-            // numericDuration
-            // 
-            this.numericDuration.Location = new System.Drawing.Point(135, 141);
-            this.numericDuration.Name = "numericDuration";
-            this.numericDuration.Size = new System.Drawing.Size(199, 21);
-            this.numericDuration.TabIndex = 36;
-            // 
-            // dateReleaseDate
-            // 
-            this.dateReleaseDate.EditValue = null;
-            this.dateReleaseDate.Location = new System.Drawing.Point(135, 179);
-            this.dateReleaseDate.Name = "dateReleaseDate";
-            this.dateReleaseDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateReleaseDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateReleaseDate.Size = new System.Drawing.Size(199, 20);
-            this.dateReleaseDate.TabIndex = 37;
-            // 
             // FrmMovieAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 318);
-            this.Controls.Add(this.groupControl1);
+            this.Controls.Add(this.grpMovieInfo);
             this.Name = "FrmMovieAdd";
             this.Text = "Add New Film";
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grpMovieInfo)).EndInit();
+            this.grpMovieInfo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDirector.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGenre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericDuration)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.GroupControl grpMovieInfo;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.TextEdit txtDirector;
         private DevExpress.XtraEditors.TextEdit txtGenre;

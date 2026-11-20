@@ -40,7 +40,7 @@
             this.gridMovies.Location = new System.Drawing.Point(0, 0);
             this.gridMovies.Name = "gridMovies";
             this.gridMovies.ReadOnly = true;
-            this.gridMovies.Size = new System.Drawing.Size(800, 450);
+            this.gridMovies.Size = new System.Drawing.Size(531, 318);
             this.gridMovies.TabIndex = 0;
             this.gridMovies.DoubleClick += new System.EventHandler(this.gridMovies_DoubleClick);
             // 
@@ -48,7 +48,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(531, 318);
             this.Controls.Add(this.gridMovies);
             this.Name = "FrmMovieDelete";
             this.Text = "Delete the Movie";

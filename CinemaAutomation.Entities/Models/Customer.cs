@@ -15,6 +15,7 @@ namespace CinemaAutomation.Entities.Models
         public string Email { get; set; }
 
         public virtual ICollection<Reservation> Reservations { get; set; }    // İlgili Rezervasyon varlıkları için gezinme özelliği
-
+        public string Surname { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -64,5 +64,10 @@ namespace DevExpressCinemaAutomation.Forms
                 XtraMessageBox.Show("Movie updated successfully!","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
+
+        private void labelControl6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

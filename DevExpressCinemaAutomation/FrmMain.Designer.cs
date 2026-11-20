@@ -40,10 +40,10 @@
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.RE = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnListCustomer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAddCustomer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDeleteCustomer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEditCustomer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
@@ -79,10 +79,10 @@
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
-            this.barButtonItem9,
-            this.barButtonItem10,
-            this.RE,
-            this.barButtonItem11,
+            this.btnListCustomer,
+            this.btnAddCustomer,
+            this.btnDeleteCustomer,
+            this.btnEditCustomer,
             this.barButtonItem12,
             this.barButtonItem13,
             this.barButtonItem14,
@@ -144,8 +144,8 @@
             // 
             this.btnRemoveMovie.Caption = "REMOVE\r\n";
             this.btnRemoveMovie.Id = 5;
-            this.btnRemoveMovie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.btnRemoveMovie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.btnRemoveMovie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveMovie.ImageOptions.Image")));
+            this.btnRemoveMovie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveMovie.ImageOptions.LargeImage")));
             this.btnRemoveMovie.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRemoveMovie.ItemAppearance.Normal.Options.UseFont = true;
             this.btnRemoveMovie.LargeWidth = 80;
@@ -185,50 +185,53 @@
             this.barButtonItem8.LargeWidth = 110;
             this.barButtonItem8.Name = "barButtonItem8";
             // 
-            // barButtonItem9
+            // btnListCustomer
             // 
-            this.barButtonItem9.Caption = "LIST\r\n";
-            this.barButtonItem9.Id = 9;
-            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.barButtonItem9.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem9.LargeWidth = 80;
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.btnListCustomer.Caption = "LIST\r\n";
+            this.btnListCustomer.Id = 9;
+            this.btnListCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnListCustomer.ImageOptions.Image")));
+            this.btnListCustomer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnListCustomer.ImageOptions.LargeImage")));
+            this.btnListCustomer.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnListCustomer.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnListCustomer.LargeWidth = 80;
+            this.btnListCustomer.Name = "btnListCustomer";
+            this.btnListCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnListCustomer_ItemClick);
             // 
-            // barButtonItem10
+            // btnAddCustomer
             // 
-            this.barButtonItem10.Caption = "ADD\r\n";
-            this.barButtonItem10.Id = 10;
-            this.barButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.barButtonItem10.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
-            this.barButtonItem10.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem10.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem10.LargeWidth = 80;
-            this.barButtonItem10.Name = "barButtonItem10";
+            this.btnAddCustomer.Caption = "ADD\r\n";
+            this.btnAddCustomer.Id = 10;
+            this.btnAddCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.ImageOptions.Image")));
+            this.btnAddCustomer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.ImageOptions.LargeImage")));
+            this.btnAddCustomer.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAddCustomer.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnAddCustomer.LargeWidth = 80;
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddCustomer_ItemClick);
             // 
-            // RE
+            // btnDeleteCustomer
             // 
-            this.RE.Caption = "REMOVE";
-            this.RE.Id = 11;
-            this.RE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("RE.ImageOptions.Image")));
-            this.RE.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("RE.ImageOptions.LargeImage")));
-            this.RE.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RE.ItemAppearance.Normal.Options.UseFont = true;
-            this.RE.LargeWidth = 80;
-            this.RE.Name = "RE";
-            this.RE.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RE_ItemClick);
+            this.btnDeleteCustomer.Caption = "REMOVE";
+            this.btnDeleteCustomer.Id = 11;
+            this.btnDeleteCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteCustomer.ImageOptions.Image")));
+            this.btnDeleteCustomer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteCustomer.ImageOptions.LargeImage")));
+            this.btnDeleteCustomer.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDeleteCustomer.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnDeleteCustomer.LargeWidth = 80;
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeleteCustomer_ItemClick_1);
             // 
-            // barButtonItem11
+            // btnEditCustomer
             // 
-            this.barButtonItem11.Caption = "EDIT\r\n";
-            this.barButtonItem11.Id = 12;
-            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.barButtonItem11.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem11.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem11.LargeWidth = 80;
-            this.barButtonItem11.Name = "barButtonItem11";
+            this.btnEditCustomer.Caption = "EDIT\r\n";
+            this.btnEditCustomer.Id = 12;
+            this.btnEditCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditCustomer.ImageOptions.Image")));
+            this.btnEditCustomer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEditCustomer.ImageOptions.LargeImage")));
+            this.btnEditCustomer.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEditCustomer.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnEditCustomer.LargeWidth = 80;
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEditCustomer_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -306,10 +309,10 @@
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup3.ItemLinks.Add(this.RE);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnListCustomer);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnAddCustomer);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnEditCustomer);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnDeleteCustomer);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Customer Operations";
             // 
@@ -372,10 +375,10 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.BarButtonItem RE;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem btnListCustomer;
+        private DevExpress.XtraBars.BarButtonItem btnAddCustomer;
+        private DevExpress.XtraBars.BarButtonItem btnDeleteCustomer;
+        private DevExpress.XtraBars.BarButtonItem btnEditCustomer;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMovieUpdate));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cmbMovies = new System.Windows.Forms.ComboBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.dateReleaseDate = new DevExpress.XtraEditors.DateEdit();
             this.numericDuration = new System.Windows.Forms.NumericUpDown();
@@ -42,7 +43,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTitle = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbMovies = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateReleaseDate.Properties)).BeginInit();
@@ -75,6 +75,17 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Movie Information";
             // 
+            // cmbMovies
+            // 
+            this.cmbMovies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMovies.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbMovies.FormattingEnabled = true;
+            this.cmbMovies.Location = new System.Drawing.Point(135, 25);
+            this.cmbMovies.Name = "cmbMovies";
+            this.cmbMovies.Size = new System.Drawing.Size(199, 24);
+            this.cmbMovies.TabIndex = 40;
+            this.cmbMovies.SelectedIndexChanged += new System.EventHandler(this.cmbMovies_SelectedIndexChanged);
+            // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -88,6 +99,7 @@
             this.labelControl6.Size = new System.Drawing.Size(129, 23);
             this.labelControl6.TabIndex = 39;
             this.labelControl6.Text = "Select a Movie:";
+            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // dateReleaseDate
             // 
@@ -222,17 +234,6 @@
             this.labelControl1.Size = new System.Drawing.Size(129, 23);
             this.labelControl1.TabIndex = 22;
             this.labelControl1.Text = "Title:";
-            // 
-            // cmbMovies
-            // 
-            this.cmbMovies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMovies.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbMovies.FormattingEnabled = true;
-            this.cmbMovies.Location = new System.Drawing.Point(135, 25);
-            this.cmbMovies.Name = "cmbMovies";
-            this.cmbMovies.Size = new System.Drawing.Size(199, 24);
-            this.cmbMovies.TabIndex = 40;
-            this.cmbMovies.SelectedIndexChanged += new System.EventHandler(this.cmbMovies_SelectedIndexChanged);
             // 
             // FrmMovieUpdate
             // 

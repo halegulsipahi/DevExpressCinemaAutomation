@@ -66,28 +66,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FrmMovieDelete.cs">
+    <Compile Include="Forms\CustomerForms\FrmCustomerAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmMovieDelete.Designer.cs">
+    <Compile Include="Forms\CustomerForms\FrmCustomerAdd.Designer.cs">
+      <DependentUpon>FrmCustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FrmCustomerDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FrmCustomerDelete.Designer.cs">
+      <DependentUpon>FrmCustomerDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FrmCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FrmCustomerList.Designer.cs">
+      <DependentUpon>FrmCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FrmCustomerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FrmCustomerUpdate.Designer.cs">
+      <DependentUpon>FrmCustomerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForms\FrmMovieDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\FrmMovieDelete.Designer.cs">
       <DependentUpon>FrmMovieDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmMovieList.cs">
+    <Compile Include="Forms\MovieForms\FrmMovieAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmMovieList.Designer.cs">
-      <DependentUpon>FrmMovieList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmMovieAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmMovieAdd.Designer.cs">
+    <Compile Include="Forms\MovieForms\FrmMovieAdd.Designer.cs">
       <DependentUpon>FrmMovieAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmMovieUpdate.cs">
+    <Compile Include="Forms\MovieForms\FrmMovieList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmMovieUpdate.Designer.cs">
+    <Compile Include="Forms\MovieForms\FrmMovieList.Designer.cs">
+      <DependentUpon>FrmMovieList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForms\FrmMovieUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\FrmMovieUpdate.Designer.cs">
       <DependentUpon>FrmMovieUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
@@ -98,16 +122,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FrmMovieDelete.resx">
+    <EmbeddedResource Include="Forms\CustomerForms\FrmCustomerAdd.resx">
+      <DependentUpon>FrmCustomerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForms\FrmCustomerDelete.resx">
+      <DependentUpon>FrmCustomerDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForms\FrmCustomerList.resx">
+      <DependentUpon>FrmCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForms\FrmCustomerUpdate.resx">
+      <DependentUpon>FrmCustomerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\FrmMovieDelete.resx">
       <DependentUpon>FrmMovieDelete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmMovieList.resx">
-      <DependentUpon>FrmMovieList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmMovieAdd.resx">
+    <EmbeddedResource Include="Forms\MovieForms\FrmMovieAdd.resx">
       <DependentUpon>FrmMovieAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmMovieUpdate.resx">
+    <EmbeddedResource Include="Forms\MovieForms\FrmMovieList.resx">
+      <DependentUpon>FrmMovieList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\FrmMovieUpdate.resx">
       <DependentUpon>FrmMovieUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">

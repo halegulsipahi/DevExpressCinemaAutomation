@@ -48,5 +48,7 @@ namespace DevExpressCinemaAutomation.Forms
                 throw;  
             }
         }
+
+       
     }
 }

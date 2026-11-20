@@ -2,6 +2,7 @@
 using CinemaAutomation.DataAccess.Services;
 using CinemaAutomation.Entities.Models;
 using DevExpressCinemaAutomation.Forms;
+using DevExpressCinemaAutomation.Forms.CustomerForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,12 +26,7 @@ namespace DevExpressCinemaAutomation
             _movieService = new MovieService(new CinemaEFContext());
             InitializeComponent();
         }
-
-        private void RE_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
+      
        
         private void FrmMain_Load(object sender, EventArgs e)
         {
@@ -48,7 +44,7 @@ namespace DevExpressCinemaAutomation
             }
            
         }
-
+        //Movie Forms
         private void btnListMovie_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmMovieList frm = new FrmMovieList();
@@ -77,5 +73,38 @@ namespace DevExpressCinemaAutomation
             frm.MdiParent = this;
             frm.Show();
         }
+
+
+        //Customer Forms
+        private void btnListCustomer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmCustomerList frm = new FrmCustomerList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnAddCustomer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmCustomerAdd frm = new FrmCustomerAdd();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnEditCustomer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmCustomerUpdate frm = new FrmCustomerUpdate();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+        
+   
+
+        private void btnDeleteCustomer_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmCustomerDelete frm = new FrmCustomerDelete();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
     }
 }
