@@ -22,6 +22,8 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
 
         SeatService seatService;
         CashRegisterService cashRegisterService;
+
+        ReservationService reservationService;
         public FrmReservation()
         {
             InitializeComponent();
@@ -32,6 +34,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
             }
             seatService = new SeatService(new CinemaEFContext());
             cashRegisterService = new CashRegisterService(new CinemaEFContext());
+            reservationService = new ReservationService(new CinemaEFContext());
         }
 
         void listSeats()
@@ -62,7 +65,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
             using (var context = new CinemaEFContext())
             {
                 listSeats();
-                var movieList = context.Movies.ToList();
+                var movieList = context.CashHistory.ToList();
                 cmbMovies.DataSource = movieList;
                 cmbMovies.DisplayMember = "Title";
                 cmbMovies.ValueMember = "Id";
@@ -72,7 +75,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
                 cmbCustomers.DisplayMember = "FirstName";
                 cmbCustomers.ValueMember = "Id";
 
-                var movies = context.Movies.ToList();
+                var movies = context.CashHistory.ToList();
                 foreach (var movie in movies)
                 {
                     GroupBox groupBox = new GroupBox();
@@ -149,8 +152,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
                         SeatId = seat,
                         ReservationDate = DateTime.Now
                     };
-                    context.Reservations.Add(reservation);
-                    
+                    reservationService.AddReservation(reservation);
                 }
 
                 foreach (var seat in selectedSeatIds)
