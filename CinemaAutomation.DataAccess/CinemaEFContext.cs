@@ -16,7 +16,7 @@ namespace CinemaAutomation.DataAccess
             Database.SetInitializer(new CreateDatabaseIfNotExists<CinemaEFContext>()); // "Veritabanı yoksa oluştur"
         }
         
-        public DbSet<Movie> CashHistory { get; set; }
+        public DbSet<Movie> Movies { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Seat> Seats { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
