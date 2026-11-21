@@ -38,6 +38,7 @@ namespace DevExpressCinemaAutomation.Forms.CustomerForms
         private void FrmCustomerList_Load(object sender, EventArgs e)
         {
             LoadCustomers();
+            gridView1.Columns["Reservations"].Visible = false;
         }
     }
 }

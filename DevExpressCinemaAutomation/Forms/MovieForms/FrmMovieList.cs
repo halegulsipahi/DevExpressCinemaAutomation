@@ -38,6 +38,9 @@ namespace DevExpressCinemaAutomation
         private void FrmFilmList_Load(object sender, EventArgs e)
         {
             LoadMovies();
+            gridView1.Columns["Reservations"].Visible = false;
         }
+
+      
     }
 }

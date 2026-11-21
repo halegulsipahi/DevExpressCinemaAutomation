@@ -56,7 +56,7 @@ namespace DevExpressCinemaAutomation.Forms.CashRegisterForm
             var todayDate = DateTime.Today;
             var startOfDay = todayDate.Date;
 
-            var endOfDay = todayDate.Date; // This will give you the end of the day (23:59:59)
+            var endOfDay = todayDate.Date; // This will give us the end of the day (23:59:59)
             endOfDay = todayDate.Date.AddDays(1).AddTicks(-1); // Set to the end of the day
 
             // Get the daily movie sales (cash register transactions)

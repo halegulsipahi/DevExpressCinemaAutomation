@@ -38,6 +38,7 @@ namespace DevExpressCinemaAutomation.Forms.CustomerForms
         private void FrmCustomerDelete_Load(object sender, EventArgs e)
         {
             LoadCustomers();
+            dgvCustomers.Columns["Reservations"].Visible = false;
         }
 
         private void dgvCustomers_DoubleClick(object sender, EventArgs e)

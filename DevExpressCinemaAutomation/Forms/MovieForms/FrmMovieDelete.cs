@@ -37,6 +37,7 @@ namespace DevExpressCinemaAutomation.Forms
         private void FrmMovieDelete_Load(object sender, EventArgs e)
         {
             LoadMovies();
+            gridMovies.Columns["Reservations"].Visible = false;
         }
 
         private void gridMovies_DoubleClick(object sender, EventArgs e)

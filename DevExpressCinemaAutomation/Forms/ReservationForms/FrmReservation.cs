@@ -1,6 +1,7 @@
 ﻿using CinemaAutomation.DataAccess;
 using CinemaAutomation.DataAccess.Services;
 using CinemaAutomation.Entities.Models;
+using DevExpress.Security;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -79,15 +80,23 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
                 foreach (var movie in movies)
                 {
                     GroupBox groupBox = new GroupBox();
-                    groupBox.Width = 100;
+                    groupBox.Width = 125;
                     groupBox.Height = 125;
                     groupBox.Text = movie.Title;
+
+                    PictureBox pictureBox = new PictureBox();
+                    pictureBox.Dock = DockStyle.Fill;
+                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                    string posterPath = System.IO.Path.Combine(Application.StartupPath, "Posters", $"{movie.Id}.jpg");
+                    if(System.IO.File.Exists(posterPath))
+                    {
+                        pictureBox.Image = Image.FromFile(posterPath);
+                    }
+
+                    groupBox.Controls.Add(pictureBox);
                     pnlNowShowing.Controls.Add(groupBox);
                 }
-
-
-
-
 
             }
         }
@@ -184,5 +193,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
 
             }
         }
+
+
     }
 }
