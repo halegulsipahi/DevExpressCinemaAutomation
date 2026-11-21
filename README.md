@@ -21,17 +21,13 @@ The application is built with C# WinForms, DevExpress WinForms controls, Entity 
 
 ## Screenshots
 
-### Cash Register & Sales Reports
+| Seat Reservation | Cash Register & Sales Reports |
+| :---: | :---: |
+| ![Seat reservation screen](./assets/reservation.png) | ![Cash register dashboard and sales reports](./assets/cashRegister.png) |
 
-![Cash register dashboard showing transactions and sales totals](./assets/cashRegister.png)
-
-### Movie Management
-
-![Movie management screen](./assets/movieList.png)
-
-### Customer Management
-
-![Customer management screen](./assets/customerList.png)
+| Movie Management | Customer Management |
+| :---: | :---: |
+| ![Movie management screen](./assets/movieList.png) | ![Customer management screen](./assets/customerList.png) |
 
 ## Architecture
 
