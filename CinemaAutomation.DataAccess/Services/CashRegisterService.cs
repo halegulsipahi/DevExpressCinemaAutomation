@@ -33,6 +33,10 @@ namespace CinemaAutomation.DataAccess.Services
                     _context.SaveChanges();
                 }
             }
+        public List<CashRegister> GetAllCashRegisters()
+        {
+            return _context.CashRegisters.ToList();
         }
+    }
     }
 
