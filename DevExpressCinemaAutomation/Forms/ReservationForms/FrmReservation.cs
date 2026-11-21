@@ -17,7 +17,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
 {
     public partial class FrmReservation : Form
     {
-        private const decimal TicketPrice = 12m; // Set the ticket price here. Constant!
+        public const decimal TicketPrice = 12m; // Set the ticket price here. Constant!
         private readonly List<int> selectedSeatIds = new List<int>(); // Store selected seat IDs
 
         SeatService seatService;
@@ -168,7 +168,7 @@ namespace DevExpressCinemaAutomation.Forms.ReservationForms
                 {
                     Amount = totalPrice,
                     TransactionDate = DateTime.Now,
-                    Description = $"Ticket sales for seats: {string.Join(", ", selectedSeatIds)}"
+                    Description = $"Movie:{cmbMovies.Text}|Customer:{cmbCustomers.Text}|Tickets:{selectedSeatIds.Count}"
                 };
 
                 cashRegisterService.AddCashRegister(cashRegisterRecord);
