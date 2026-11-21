@@ -44,9 +44,10 @@ The solution uses an N-tier architecture that separates the desktop interface, b
 
 ### Prerequisites
 
-- Visual Studio 2022 with the **.NET desktop development** workload
-- DevExpress WinForms components compatible with the project references
-- SQL Server LocalDB
+- Windows with Visual Studio 2022 and the **.NET desktop development** workload
+- .NET Framework 4.8 targeting pack
+- DevExpress WinForms 26.1.6
+- SQL Server Express LocalDB with the `MSSQLLocalDB` instance
 
 ### Installation
 
@@ -57,13 +58,13 @@ The solution uses an N-tier architecture that separates the desktop interface, b
    ```
 
 2. Open `DevExpressCinemaAutomation.sln` in Visual Studio.
-3. Right-click the solution in **Solution Explorer** and select **Restore NuGet Packages**.
-4. Open `DevExpressCinemaAutomation/App.config`. In the `connectionStrings` section, check that the configured SQL Server instance matches your local installation. Update the connection string if needed.
-5. In **Solution Explorer**, right-click `DevExpressCinemaAutomation` and select **Set as Startup Project**.
-6. Press **F5** to build and run the application. Entity Framework initializes the database on first run.
+3. In **Solution Explorer**, right-click the solution and select **Restore NuGet Packages**. This restores the project's NuGet dependencies, including Entity Framework 6.5.2.
+4. Open `DevExpressCinemaAutomation/App.config` and check the `connectionStrings` section. The default configuration connects to the `CinemaAutomationDb` database on `(localdb)\MSSQLLocalDB` using Windows authentication. If you use a different SQL Server instance, update the `Data Source` value.
+5. In **Solution Explorer**, right-click the WinForms project (`DevExpressCinemaAutomation.UI.csproj`) and select **Set as Startup Project**.
+6. Press **F5** to build and run the application.
 
 ### Optional Movie Posters
 
-To show posters in the **Now Showing** panel, create a `Posters` folder in the application's output directory. For a Debug build, use `DevExpressCinemaAutomation/bin/Debug/Posters/`.
+To display posters in the **Now Showing** panel, create a `Posters` folder in the application's output directory. For a Debug build, use `DevExpressCinemaAutomation/bin/Debug/Posters/`.
 
-Save each poster as a `.jpg` file named after its movie ID. For example, use `1.jpg` for movie ID `1` and `2.jpg` for movie ID `2`.
+Save each poster as a `.jpg` file named after its movie ID. For example, use `1.jpg` for movie ID `1`.
