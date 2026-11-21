@@ -37,7 +37,7 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.btnEditMovie = new DevExpress.XtraBars.BarButtonItem();
             this.btnRemoveMovie = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnReports = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.btnListCustomer = new DevExpress.XtraBars.BarButtonItem();
@@ -76,7 +76,7 @@
             this.barButtonItem3,
             this.btnEditMovie,
             this.btnRemoveMovie,
-            this.barButtonItem6,
+            this.btnReports,
             this.barButtonItem7,
             this.barButtonItem8,
             this.btnListCustomer,
@@ -152,16 +152,17 @@
             this.btnRemoveMovie.Name = "btnRemoveMovie";
             this.btnRemoveMovie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRemoveMovie_ItemClick);
             // 
-            // barButtonItem6
+            // btnReports
             // 
-            this.barButtonItem6.Caption = "REPORTS";
-            this.barButtonItem6.Id = 6;
-            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.barButtonItem6.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem6.LargeWidth = 100;
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.btnReports.Caption = "REPORTS";
+            this.btnReports.Id = 6;
+            this.btnReports.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.btnReports.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.btnReports.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnReports.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnReports.LargeWidth = 100;
+            this.btnReports.Name = "btnReports";
+            this.btnReports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReports_ItemClick);
             // 
             // barButtonItem7
             // 
@@ -295,9 +296,7 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnReports);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Cash Operations";
             // 
@@ -372,7 +371,7 @@
         private DevExpress.XtraBars.BarButtonItem btnRemoveMovie;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem btnReports;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;

@@ -2,6 +2,7 @@
 using CinemaAutomation.DataAccess.Services;
 using CinemaAutomation.Entities.Models;
 using DevExpressCinemaAutomation.Forms;
+using DevExpressCinemaAutomation.Forms.CashRegisterForm;
 using DevExpressCinemaAutomation.Forms.CustomerForms;
 using DevExpressCinemaAutomation.Forms.ReservationForms;
 using System;
@@ -117,6 +118,13 @@ namespace DevExpressCinemaAutomation
         private void btnMakeReservation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmReservation frm = new FrmReservation();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmReports frm = new FrmReports();
             frm.MdiParent = this;
             frm.Show();
         }
